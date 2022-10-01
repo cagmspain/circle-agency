@@ -156,6 +156,7 @@ body
 body > section.projects {
 	padding: 0 30px;
 	height: auto;
+	padding-bottom: 50px;
 }
 body > section.projects > div.projects-container {
 	display: flex;
@@ -290,4 +291,115 @@ body
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+/*#########################
+######## SERVICES #########
+###########################
+*/
+body > section.services {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 0px 30px;
+	padding-bottom: 50px;
+	height: 1200px;
+}
+body > section.services > div.services-grid {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	gap: 15px;
+}
+body > section.services > div.services-grid > div.service-card {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	padding: 30px 30px;
+}
+body > section.services > div.services-grid > div.service-card > div.icon-1 {
+	background-color: #ecf7ff;
+	background-image: url("./project-assets/services-section/icons/1.svg");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center;
+	border-radius: 50%;
+
+	height: 80px;
+	width: 80px;
+}
+body > section.services > div.services-grid > div.service-card > div.icon-2 {
+	background-color: #ecf7ff;
+	background-image: url("./project-assets/services-section/icons/2.svg");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center;
+	border-radius: 50%;
+
+	height: 80px;
+	width: 80px;
+}
+body > section.services > div.services-grid > div.service-card > div.icon-3 {
+	background-color: #ecf7ff;
+	background-image: url("./project-assets/services-section/icons/3.svg");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center;
+	border-radius: 50%;
+
+	height: 80px;
+	width: 80px;
+}
+body
+	> section.services
+	> div.services-grid
+	> div.service-card
+	> div.service-content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+body
+	> section.services
+	> div.services-grid
+	> div.service-card
+	> div.service-content
+	> div.service-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 20px;
+}
+body
+	> section.services
+	> div.services-grid
+	> div.service-card
+	> div.service-content
+	> div.service-text
+	> div.project-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+body
+	> section.services
+	> div.services-grid
+	> div.service-card
+	> div.service-content
+	> div.service-text
+	> div.project-description {
+	font-size: 1.1rem;
+}
+body
+	> section.services
+	> div.services-grid
+	> div.service-card
+	> div.service-content
+	> a {
+	text-decoration: none;
+	color: #072ac8;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
