@@ -5,7 +5,7 @@
 }
 
 img {
-	max-width: 200px;
+	max-width: 100%;
 }
 
 /*#########################
@@ -30,6 +30,19 @@ body {
 		"testimonial"
 		"questions"
 		"footer";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 1.2rem;
+	color: #292e47;
+	background-color: #f2f4fc;
+}
+/*#########################
+  ##### not displayed #####
+###########################
+*/
+
+.not-mobile {
+	display: none;
 }
 
 /*#########################
@@ -42,6 +55,68 @@ body > section.nav {
 	grid-area: "nav";
 	padding: 20px 30px;
 }
-body > section.nav > .not-mobile {
-	display: none;
+/*#########################
+  ######### HERO #########
+###########################
+*/
+
+body > section.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	padding: 20px 30px;
+}
+body > section.hero > div.container {
+	height: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+body > section.hero > div.container > div.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+body > section.hero > div.container > div.hero-content > div.hero-buttons {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column-reverse;
+}
+body > section.hero > div.container > div.hero-content > div.text-block {
+	color: #6b708d;
+	font-size: 1.1rem;
+}
+body > section.hero > div.container > div.hero-content > div.hero-buttons > a {
+	text-decoration: none;
+	color: #6b708d;
+}
+body
+	> section.hero
+	> div.container
+	> div.hero-content
+	> div.hero-buttons
+	> a.blue1 {
+	background-color: #072ac8;
+	color: #f2f4fc;
+	line-height: 50px;
+	width: 150px;
+	text-align: center;
+	font-size: 1.1rem;
+}
+body
+	> section.hero
+	> div.container
+	> div.hero-content
+	> div.hero-buttons
+	> a.white1 {
+	line-height: 50px;
+	font-size: 1.1rem;
+}
+body > section.hero > div.container > div.images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
