@@ -21,19 +21,10 @@ img {
 */
 body {
 	height: 100vh;
-	display: grid;
-	grid-template-areas:
-		"nav"
-		"hero"
-		"logos"
-		"projects"
-		"testimonial"
-		"questions"
-		"footer";
+
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	font-size: 14px;
-	line-height: 20px;
+
 	color: #292e47;
 	background-color: #f2f4fc;
 }
@@ -53,7 +44,7 @@ body {
 body > section.nav {
 	display: flex;
 	justify-content: space-between;
-	grid-area: "nav";
+
 	padding: 20px 30px;
 }
 /*#########################
@@ -79,6 +70,9 @@ body > section.hero > div.container > div.hero-content {
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
+}
+body > section.hero > div.container > div.hero-content > h1 {
+	font-size: 30px;
 }
 body > section.hero > div.container > div.hero-content > div.hero-buttons {
 	text-decoration: none;
@@ -154,4 +148,84 @@ body
 	> div.client-logo
 	> img {
 	width: 100%;
+}
+/*#########################
+######## PROJECTS #########
+###########################
+*/
+body > section.projects {
+	padding: 0 30px;
+	height: auto;
+}
+body > section.projects > div.projects-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	height: 100%;
+}
+body > section.projects > div.projects-container > h2 {
+	font-size: 1.9rem;
+}
+body > section.projects > div.projects-container > div.cards {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	gap: 50px;
+}
+
+body
+	> section.projects
+	> div.projects-container
+	> div.cards
+	> div.container-card {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	height: 100%;
+	gap: 20px;
+}
+body
+	> section.projects
+	> div.projects-container
+	> div.cards
+	> div.container-card
+	> div.project-image {
+	width: 100%;
+}
+body
+	> section.projects
+	> div.projects-container
+	> div.cards
+	> div.container-card
+	> div.project-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	gap: 30px;
+	padding-left: 30px;
+}
+body
+	> section.projects
+	> div.projects-container
+	> div.cards
+	> div.container-card
+	> div.project-content
+	> div.project-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+body
+	> section.projects
+	> div.projects-container
+	> div.cards
+	> div.container-card
+	> div.project-content
+	> a {
+	text-decoration: none;
+	color: #072ac8;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
