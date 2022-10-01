@@ -229,3 +229,65 @@ body
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
+
+/*#########################
+######## TESTIMONIAL #########
+###########################
+*/
+body > section.testimonial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #292e47;
+	color: #ecf7ff;
+	height: 50vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-image: url("./project-assets/testimonial-section/orbit.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+body > section.testimonial > div.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+}
+body > section.testimonial > div.container > h3 {
+	font-size: 1.9rem;
+	text-align: center;
+	line-height: 150%;
+}
+body > section.testimonial > div.container > div.testimonial-text {
+	color: #ffc600;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: 700;
+	line-height: 150%;
+}
+body > section.testimonial > div.container > div.client {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+body
+	> section.testimonial
+	> div.container
+	> div.client
+	> div.client-info
+	> div.client-name {
+	color: #a2d6f9;
+}
+
+body
+	> section.testimonial
+	> div.container
+	> div.client
+	> div.client-image
+	> img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
