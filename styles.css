@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+img {
+	max-width: 200px;
+}
+
+/*#########################
+###########################
+######### MOBILE ##########
+###########################
+###########################
+*/
+
+/*#########################
+  ######### BODY #########
+###########################
+*/
+body {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+		"nav"
+		"hero"
+		"logos"
+		"projects"
+		"testimonial"
+		"questions"
+		"footer";
+}
+
+/*#########################
+  ######### NAV #########
+###########################
+*/
+body > section.nav {
+	display: flex;
+	justify-content: space-between;
+	grid-area: "nav";
+	padding: 20px 30px;
+}
+body > section.nav > .not-mobile {
+	display: none;
+}
