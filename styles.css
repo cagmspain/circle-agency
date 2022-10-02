@@ -115,6 +115,9 @@ body > section.hero > div.container > div.images {
 	align-items: center;
 	justify-content: center;
 }
+body > section.hero > div.container > div.images > img.imagen {
+	max-width: 320px;
+}
 /*#########################
   ######### LOGOS #########
 ###########################
@@ -192,7 +195,7 @@ body
 	> div.cards
 	> div.container-card
 	> div.project-image {
-	width: 100%;
+	max-width: 340px;
 }
 body
 	> section.projects
@@ -563,10 +566,7 @@ body > section.footer > div.container > div.footer-links > a {
 ###########################
 ###########################
 */
-@media (min-width: 500px) {
-	img {
-		max-width: 600px;
-	}
+@media (min-width: 990px) {
 	/*#########################
   	##### not displayed #####
 	###########################
@@ -637,7 +637,7 @@ body > section.footer > div.container > div.footer-links > a {
 		padding: 0 140px;
 	}
 	body > section.hero > div.container > div.hero-content {
-		width: 550px;
+		min-width: 500px;
 		display: flex;
 	}
 	body > section.hero > div.container > div.hero-content > h1 {
@@ -654,7 +654,8 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.hero > div.container > div.hero-content > div.hero-buttons {
 		display: flex;
 		flex-direction: row;
-		width: 550px;
+		text-align: left;
+		min-width: 500px;
 		gap: 30px;
 
 		text-align: left;
@@ -665,17 +666,16 @@ body > section.footer > div.container > div.footer-links > a {
 		position: relative;
 	}
 	body > section.hero > div.container > div.images > img.imagen {
-		width: 560px;
+		min-width: 560px;
 		height: 620px;
 	}
 	body > section.hero > div.container > div.images > img.tarjeta1 {
-		width: 290px;
 		position: absolute;
 		left: -19%;
 		top: 0%;
 		right: auto;
 		bottom: auto;
-		max-width: 375px;
+		max-width: 300px;
 	}
 	body > section.hero > div.container > div.images > img.tarjeta2 {
 		position: absolute;
@@ -690,6 +690,9 @@ body > section.footer > div.container > div.footer-links > a {
 ######## LOGOS #########
 ###########################
 */
+	body > section.logos {
+		margin-top: 50px;
+	}
 	body > section.logos > div.container-logos {
 		margin-left: auto;
 		margin-right: auto;
@@ -732,6 +735,8 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.projects > div.projects-container > div.cards {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 		gap: 40px;
 	}
 	body
@@ -839,6 +844,7 @@ body > section.footer > div.container > div.footer-links > a {
 		display: flex;
 		flex-direction: row;
 	}
+
 	/*#########################
 ######## QUESTIONS #########
 ###########################

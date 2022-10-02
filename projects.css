@@ -116,7 +116,6 @@ body > section.projects > div.projects-container > div.cards {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-
 	gap: 50px;
 }
 
@@ -130,8 +129,6 @@ body
 	background-color: white;
 	height: 100%;
 	gap: 20px;
-	max-width: 370px;
-	max-height: 500px;
 }
 body
 	> section.projects
@@ -139,7 +136,7 @@ body
 	> div.cards
 	> div.container-card
 	> div.project-image {
-	width: 100%;
+	max-width: 340px;
 }
 body
 	> section.projects
@@ -423,6 +420,7 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.projects > div.projects-container {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		max-width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
@@ -449,6 +447,8 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.projects > div.projects-container > div.cards {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 		gap: 40px;
 	}
 	body
