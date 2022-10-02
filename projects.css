@@ -311,3 +311,226 @@ body > section.footer > div.container > div.footer-links > a {
 	color: #072ac8;
 	font-weight: 500;
 }
+/*#########################
+###########################
+######### DESKTOP #########
+###########################
+###########################
+*/
+/*#########################
+###########################
+####### MEDIA QUERY #######
+###########################
+###########################
+*/
+@media (min-width: 500px) {
+	img {
+		max-width: 600px;
+	}
+	/*#########################
+  	##### not displayed #####
+	###########################
+	*/
+	.not-mobile {
+		display: block;
+	}
+	i.fa-solid {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+		color: #6b708d;
+		font-weight: 500;
+	}
+	/*#########################
+	######## NAV #########
+	###########################
+	*/
+	body > section.nav {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		align-items: center;
+		height: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 50px 0;
+		max-width: 1100px;
+	}
+	body > section.nav > div > nav {
+		display: flex;
+		gap: 20px;
+		font-size: 1.1rem;
+	}
+	body > section.nav > div.contact {
+		width: 150px;
+	}
+	body > section.nav > div > a {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #072ac8;
+		color: #f2f4fc;
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+	/*#########################
+######## LANDING  #########
+###########################
+*/
+	body > section.landing {
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		margin-top: 70px;
+		display: flex;
+		flex-direction: column;
+	}
+	body > section.landing > h1 {
+		font-size: 4rem;
+		padding-top: 0;
+	}
+	body > section.landing > img {
+		max-width: 1100px;
+		box-shadow: -1px 1px 51px 0px rgba(247, 9, 9, 0.48);
+		-webkit-box-shadow: -1px 1px 51px 0px rgba(247, 9, 9, 0.48);
+		-moz-box-shadow: -1px 1px 51px 0px rgba(247, 9, 9, 0.48);
+	}
+	body > section.landing > div.container-landing {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 0;
+		width: 100%;
+	}
+
+	/*#########################
+######## PROJECTS #########
+###########################
+*/
+	body > section.projects > div.projects-container {
+		display: flex;
+		flex-direction: column;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 100px;
+		padding-top: 50px;
+		padding-bottom: 200px;
+	}
+	body > section.projects > div.projects-container > h2 {
+		font-size: 2.5rem;
+		padding-left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	body
+		> section.projects
+		> div.projects-container
+		> div.cards
+		> div
+		> div
+		> img {
+		max-width: 340px;
+		min-height: 258.32px;
+	}
+	body > section.projects > div.projects-container > div.cards {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+	}
+	body
+		> section.projects
+		> div.projects-container
+		> div.cards
+		> div.container-card {
+		height: 450px;
+	}
+	/*#########################
+######## QUESTIONS #########
+###########################
+*/
+	body > section.questions {
+		max-width: 1250px;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 500px;
+	}
+
+	body > section.questions > div.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		justify-content: center;
+	}
+	body > section.questions > div.container > h1 {
+		font-size: 2.5rem;
+	}
+	body > section.questions > div.container > div.cta-subtitle {
+		padding-bottom: 30px;
+	}
+	body > section.questions > div.container > div.form-block > form {
+		display: flex;
+		flex-direction: row;
+	}
+	body
+		> section.questions
+		> div.container
+		> div.form-block
+		> form
+		> div.cta-textfield-wrapper {
+		width: 400px;
+	}
+	/*#########################
+######## FOOTER #########
+###########################
+*/
+	body > section.footer {
+		height: 200px;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+	}
+	body > section.footer > div.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	body > section.footer > div.container > div.footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-address {
+		text-align: left;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-logo {
+		width: 100%;
+		text-align: left;
+	}
+
+	body > section.footer > div.container > div.footer-links {
+		display: flex;
+		gap: 50px;
+		max-width: 350px;
+		flex-wrap: wrap;
+		padding: 0 0;
+	}
+}

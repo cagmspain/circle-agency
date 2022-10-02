@@ -170,3 +170,117 @@ body > section.footer > div.container > div.footer-links > a {
 	color: #072ac8;
 	font-weight: 500;
 }
+/*#########################
+###########################
+######### DESKTOP #########
+###########################
+###########################
+*/
+/*#########################
+###########################
+####### MEDIA QUERY #######
+###########################
+###########################
+*/
+@media (min-width: 500px) {
+	img {
+		max-width: 600px;
+	}
+	/*#########################
+  	##### not displayed #####
+	###########################
+	*/
+	.not-mobile {
+		display: block;
+	}
+	i.fa-solid {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+		color: #6b708d;
+		font-weight: 500;
+	}
+	/*#########################
+	######## NAV #########
+	###########################
+	*/
+	body > section.nav {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		align-items: center;
+		height: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 50px 0;
+		max-width: 1100px;
+	}
+	body > section.nav > div > nav {
+		display: flex;
+		gap: 20px;
+		font-size: 1.1rem;
+	}
+	body > section.nav > div.contact {
+		width: 150px;
+	}
+	body > section.nav > div > a {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #072ac8;
+		color: #f2f4fc;
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+	/*#########################
+######## FOOTER #########
+###########################
+*/
+	body > section.footer {
+		height: 200px;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+	}
+	body > section.footer > div.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	body > section.footer > div.container > div.footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-address {
+		text-align: left;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-logo {
+		width: 100%;
+		text-align: left;
+	}
+
+	body > section.footer > div.container > div.footer-links {
+		display: flex;
+		gap: 50px;
+		max-width: 350px;
+		flex-wrap: wrap;
+		padding: 0 0;
+	}
+}
