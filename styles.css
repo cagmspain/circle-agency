@@ -483,6 +483,7 @@ body > section.questions > div.container > div.form-block > form > input {
 	background-color: #072ac8;
 	color: #f2f4fc;
 	font-size: 1.2rem;
+	border: none;
 }
 /*#########################
 ######## FOOTER #########
@@ -842,10 +843,37 @@ body > section.footer > div.container > div.footer-links > a {
 ######## QUESTIONS #########
 ###########################
 */
+	body > section.questions {
+		max-width: 1250px;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 500px;
+	}
+
 	body > section.questions > div.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 20px;
+		justify-content: center;
+	}
+	body > section.questions > div.container > h1 {
+		font-size: 2.5rem;
+	}
+	body > section.questions > div.container > div.cta-subtitle {
+		padding-bottom: 30px;
+	}
+	body > section.questions > div.container > div.form-block > form {
+		display: flex;
+		flex-direction: row;
+	}
+	body
+		> section.questions
+		> div.container
+		> div.form-block
+		> form
+		> div.cta-textfield-wrapper {
+		width: 400px;
 	}
 	/*#########################
 ######## FOOTER #########
@@ -853,15 +881,45 @@ body > section.footer > div.container > div.footer-links > a {
 */
 	body > section.footer {
 		height: 200px;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
 	}
 	body > section.footer > div.container {
 		display: flex;
+		flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
+		width: 100%;
 	}
+	body > section.footer > div.container > div.footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-address {
+		text-align: left;
+	}
+	body
+		> section.footer
+		> div.container
+		> div.footer-content
+		> div.footer-content-logo {
+		width: 100%;
+		text-align: left;
+	}
+
 	body > section.footer > div.container > div.footer-links {
 		display: flex;
-		gap: 1rem;
-		max-width: 300px;
+		gap: 50px;
+		max-width: 350px;
 		flex-wrap: wrap;
+		padding: 0 0;
 	}
 }
