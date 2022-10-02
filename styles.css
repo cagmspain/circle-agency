@@ -591,9 +591,10 @@ body > section.footer > div.container > div.footer-links > a {
 		margin-top: 50px;
 		align-items: center;
 		height: 60px;
-		margin: 0 150px;
-		padding: 100px 0;
-		width: 1180px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 50px 0;
+		max-width: 1100px;
 	}
 	body > section.nav > div > nav {
 		display: flex;
@@ -622,8 +623,10 @@ body > section.footer > div.container > div.footer-links > a {
 */
 	body > section.hero {
 		padding: 30px 30px;
-		width: 1440px;
+		max-width: 1100px;
 		height: 80vh;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	body > section.hero > div.container {
@@ -686,9 +689,14 @@ body > section.footer > div.container > div.footer-links > a {
 ######## LOGOS #########
 ###########################
 */
+	body > section.logos > div.container-logos {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1100px;
+	}
 	body > section.logos > div.container-logos > div.grid-logos {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 	/*#########################
 ######## PROJECTS #########
@@ -697,10 +705,40 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.projects > div.projects-container {
 		display: flex;
 		flex-direction: column;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 100px;
+		padding-top: 50px;
+		padding-bottom: 200px;
+	}
+	body > section.projects > div.projects-container > h2 {
+		font-size: 2.5rem;
+		padding-left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	body
+		> section.projects
+		> div.projects-container
+		> div.cards
+		> div
+		> div
+		> img {
+		max-width: 340px;
+		min-height: 258.32px;
 	}
 	body > section.projects > div.projects-container > div.cards {
 		display: flex;
-		justify-content: space-around;
+		flex-direction: row;
+		gap: 40px;
+	}
+	body
+		> section.projects
+		> div.projects-container
+		> div.cards
+		> div.container-card {
+		height: 450px;
 	}
 	/*#########################
 ######## TESTIMONIAL #########
@@ -713,7 +751,70 @@ body > section.footer > div.container > div.footer-links > a {
 		background-image: url("./project-assets/testimonial-section/orbit.png");
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-color: black;
+		background-color: #292e47;
+		position: relative;
+		height: 650px;
+		max-width: 1250px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 150px;
+	}
+	body > section.testimonial > div.container > h3 {
+		color: #ecf7ff;
+		font-size: 40px;
+		text-align: center;
+	}
+	body > section.testimonial > div.container > div.testimonial-text {
+		margin-right: auto;
+		margin-left: auto;
+		color: #ffc600;
+		font-size: 24px;
+		line-height: 160%;
+		font-weight: 500;
+		text-align: center;
+		max-width: 560px;
+	}
+
+	body > section.testimonial > div.emoji > img {
+		max-width: 150px;
+		position: absolute;
+	}
+	.emoji.top-left {
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		right: auto;
+		bottom: auto;
+		margin-top: 5%;
+		margin-left: 10%;
+	}
+	.emoji.top-right {
+		position: absolute;
+		left: auto;
+		top: 0%;
+		right: 0%;
+		bottom: auto;
+		margin-top: 5%;
+		margin-right: 20%;
+	}
+	.emoji.bottom-left {
+		position: absolute;
+		left: 0%;
+		top: auto;
+		right: auto;
+		bottom: 0%;
+		margin-bottom: 20%;
+		margin-left: 10%;
+		padding-left: 0%;
+	}
+	.emoji.bottom-right {
+		position: absolute;
+		left: auto;
+		top: auto;
+		right: 0%;
+		bottom: 0%;
+		margin-right: 20%;
+		margin-bottom: 20%;
 	}
 	/*#########################
 ######## SERVICES #########
