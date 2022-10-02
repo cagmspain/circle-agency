@@ -564,7 +564,7 @@ body > section.footer > div.container > div.footer-links > a {
 */
 @media (min-width: 500px) {
 	img {
-		max-width: 200px;
+		max-width: 600px;
 	}
 	/*#########################
   	##### not displayed #####
@@ -591,6 +591,9 @@ body > section.footer > div.container > div.footer-links > a {
 		margin-top: 50px;
 		align-items: center;
 		height: 60px;
+		margin: 0 150px;
+		padding: 100px 0;
+		width: 1180px;
 	}
 	body > section.nav > div > nav {
 		display: flex;
@@ -617,17 +620,75 @@ body > section.footer > div.container > div.footer-links > a {
 ######## HERO #########
 ###########################
 */
+	body > section.hero {
+		padding: 30px 30px;
+		width: 1440px;
+		height: 80vh;
+	}
 
 	body > section.hero > div.container {
 		display: flex;
+		width: 100%;
+		gap: 60px;
+		padding: 0 140px;
 	}
+	body > section.hero > div.container > div.hero-content {
+		width: 550px;
+		display: flex;
+	}
+	body > section.hero > div.container > div.hero-content > h1 {
+		font-size: 60px;
+		text-align: left;
+	}
+	body > section.hero > div.container > div.hero-content > div.text-block {
+		font-size: 1.4rem;
+		line-height: 150%;
+		color: #6b708d;
+		text-align: left;
+		margin-right: 40px;
+	}
+	body > section.hero > div.container > div.hero-content > div.hero-buttons {
+		display: flex;
+		flex-direction: row;
+		width: 550px;
+		gap: 30px;
+
+		text-align: left;
+		justify-content: flex-start;
+	}
+	body > section.hero > div.container > div.images {
+		width: 600px;
+		position: relative;
+	}
+	body > section.hero > div.container > div.images > img.imagen {
+		width: 560px;
+		height: 620px;
+	}
+	body > section.hero > div.container > div.images > img.tarjeta1 {
+		width: 290px;
+		position: absolute;
+		left: -19%;
+		top: 0%;
+		right: auto;
+		bottom: auto;
+		max-width: 375px;
+	}
+	body > section.hero > div.container > div.images > img.tarjeta2 {
+		position: absolute;
+		left: auto;
+		top: auto;
+		right: -25%;
+		bottom: -22%;
+		max-width: 300px;
+	}
+
 	/*#########################
 ######## LOGOS #########
 ###########################
 */
 	body > section.logos > div.container-logos > div.grid-logos {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 	/*#########################
 ######## PROJECTS #########
