@@ -562,3 +562,133 @@ body > section.footer > div.container > div.footer-links > a {
 ###########################
 ###########################
 */
+@media (min-width: 500px) {
+	img {
+		max-width: 200px;
+	}
+	/*#########################
+  	##### not displayed #####
+	###########################
+	*/
+	.not-mobile {
+		display: block;
+	}
+	i.fa-solid {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+		color: #6b708d;
+		font-weight: 500;
+	}
+	/*#########################
+	######## NAV #########
+	###########################
+	*/
+	body > section.nav {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		align-items: center;
+		height: 60px;
+	}
+	body > section.nav > div > nav {
+		display: flex;
+		gap: 20px;
+		font-size: 1.1rem;
+	}
+	body > section.nav > div.contact {
+		width: 150px;
+	}
+	body > section.nav > div > a {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #072ac8;
+		color: #f2f4fc;
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	/*#########################
+######## HERO #########
+###########################
+*/
+
+	body > section.hero > div.container {
+		display: flex;
+	}
+	/*#########################
+######## LOGOS #########
+###########################
+*/
+	body > section.logos > div.container-logos > div.grid-logos {
+		display: flex;
+		justify-content: space-around;
+	}
+	/*#########################
+######## PROJECTS #########
+###########################
+*/
+	body > section.projects > div.projects-container {
+		display: flex;
+		flex-direction: column;
+	}
+	body > section.projects > div.projects-container > div.cards {
+		display: flex;
+		justify-content: space-around;
+	}
+	/*#########################
+######## TESTIMONIAL #########
+###########################
+*/
+	body > section.testimonial {
+		display: flex;
+		color: white;
+		flex-direction: column;
+		background-image: url("./project-assets/testimonial-section/orbit.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: black;
+	}
+	/*#########################
+######## SERVICES #########
+###########################
+*/
+	body > section.services > div.services-container {
+		display: flex;
+		flex-direction: column;
+	}
+	body > section.services > div.services-container > div.services-grid {
+		display: flex;
+	}
+	/*#########################
+######## QUESTIONS #########
+###########################
+*/
+	body > section.questions > div.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	/*#########################
+######## FOOTER #########
+###########################
+*/
+	body > section.footer {
+		height: 200px;
+	}
+	body > section.footer > div.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	body > section.footer > div.container > div.footer-links {
+		display: flex;
+		gap: 1rem;
+		max-width: 300px;
+		flex-wrap: wrap;
+	}
+}
