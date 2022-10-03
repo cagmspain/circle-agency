@@ -105,7 +105,6 @@ body > section.projects > div.projects-container {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	flex-wrap: wrap;
 	align-items: center;
 	height: 100%;
 }
@@ -129,6 +128,7 @@ body
 	background-color: white;
 	height: 100%;
 	gap: 20px;
+	max-width: 340px;
 }
 body
 	> section.projects
@@ -148,7 +148,8 @@ body
 	flex-direction: column;
 	height: 100%;
 	gap: 30px;
-	padding-left: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 body
 	> section.projects
@@ -174,6 +175,7 @@ body
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
+
 /*#########################
 ######## QUESTIONS #########
 ###########################
@@ -420,7 +422,7 @@ body > section.footer > div.container > div.footer-links > a {
 	body > section.projects > div.projects-container {
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
+
 		max-width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
@@ -442,7 +444,7 @@ body > section.footer > div.container > div.footer-links > a {
 		> div
 		> img {
 		max-width: 340px;
-		min-height: 258.32px;
+		min-height: 258px;
 	}
 	body > section.projects > div.projects-container > div.cards {
 		display: flex;
@@ -456,7 +458,17 @@ body > section.footer > div.container > div.footer-links > a {
 		> div.projects-container
 		> div.cards
 		> div.container-card {
-		height: 450px;
+		max-width: 340px;
+		min-height: 610px;
+	}
+	body
+		> section.projects
+		> div.projects-container
+		> div.cards
+		> div.container-card
+		> div.project-content
+		> div.project-title {
+		min-height: 110px;
 	}
 	/*#########################
 ######## QUESTIONS #########
