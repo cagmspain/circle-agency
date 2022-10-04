@@ -21,7 +21,7 @@ img {
 */
 body {
 	height: 100vh;
-
+	overflow-x: hidden;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
@@ -307,7 +307,7 @@ body > section.services {
 	gap: 30px;
 	padding: 30px 30px;
 	padding-bottom: 50px;
-	height: 1300px;
+	max-height: 1300px;
 }
 body > section.services > h1 {
 	text-align: center;
@@ -316,6 +316,7 @@ body > section.services > h1 {
 }
 body > section.services > div.services-grid {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	height: 100%;
 
@@ -326,12 +327,13 @@ body > section.services > div.services-grid > div.service-card {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	max-width: 320px;
 
 	padding: 30px 30px;
 }
 body > section.services > div.services-grid > div.service-card > div.icon-1 {
 	background-color: #ecf7ff;
-	background-image: url("./project-assets/services-section/icons/1.svg");
+	background-image: url("../project-assets/services-section/icons/1.svg");
 	background-repeat: no-repeat;
 	background-size: 40px;
 	background-position: center;
@@ -342,7 +344,7 @@ body > section.services > div.services-grid > div.service-card > div.icon-1 {
 }
 body > section.services > div.services-grid > div.service-card > div.icon-2 {
 	background-color: #ecf7ff;
-	background-image: url("./project-assets/services-section/icons/2.svg");
+	background-image: url("../project-assets/services-section/icons/2.svg");
 	background-repeat: no-repeat;
 	background-size: 40px;
 	background-position: center;
@@ -353,7 +355,7 @@ body > section.services > div.services-grid > div.service-card > div.icon-2 {
 }
 body > section.services > div.services-grid > div.service-card > div.icon-3 {
 	background-color: #ecf7ff;
-	background-image: url("./project-assets/services-section/icons/3.svg");
+	background-image: url("../project-assets/services-section/icons/3.svg");
 	background-repeat: no-repeat;
 	background-size: 40px;
 	background-position: center;
@@ -845,7 +847,7 @@ body > section.footer > div.container > div.footer-links > a {
 		max-width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
-		max-height: 500px;
+		max-height: auto;
 		gap: 100px;
 		margin-bottom: 200px;
 	}
@@ -855,7 +857,12 @@ body > section.footer > div.container > div.footer-links > a {
 	}
 	body > section.services > div.services-grid {
 		display: flex;
+		justify-content: center;
 		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	body > section.services > div.services-grid > div.service-card {
+		max-width: 280px;
 	}
 
 	/*#########################

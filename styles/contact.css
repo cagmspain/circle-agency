@@ -183,6 +183,9 @@ body > section.footer > div.container > div.footer-links > a {
 ###########################
 */
 @media (min-width: 990px) {
+	body {
+		overflow-x: hidden;
+	}
 	img {
 		max-width: 600px;
 	}
@@ -205,6 +208,7 @@ body > section.footer > div.container > div.footer-links > a {
 	######## NAV #########
 	###########################
 	*/
+
 	body > section.nav {
 		display: flex;
 		justify-content: space-between;
