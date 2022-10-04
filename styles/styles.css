@@ -36,7 +36,18 @@ body {
 .not-mobile {
 	display: none;
 }
-
+div.not-desktop > nav {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	background-color: #072ac8;
+	justify-content: space-around;
+	align-items: center;
+}
+div.not-desktop > nav > div > a {
+	text-decoration: none;
+	color: #ecf7ff;
+}
 /*#########################
   ######### NAV #########
 ###########################
@@ -249,7 +260,7 @@ body > section.testimonial {
 	height: 50vh;
 	padding-left: 30px;
 	padding-right: 30px;
-	background-image: url("./project-assets/testimonial-section/orbit.png");
+	background-image: url("../project-assets/testimonial-section/orbit.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -575,6 +586,10 @@ body > section.footer > div.container > div.footer-links > a {
   	##### not displayed #####
 	###########################
 	*/
+	.not-desktop {
+		display: none;
+	}
+
 	.not-mobile {
 		display: block;
 	}
