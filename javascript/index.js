@@ -53,11 +53,9 @@ const burguer = document.querySelector(".fa-solid");
 const navMobile = document.querySelector(".not-desktop");
 //on click,  desplegar menu
 burguer.addEventListener("click", () => {
-	console.log("im here");
 	navMobile.removeAttribute("hidden");
 });
 // on click ocultar menu
 navMobile.addEventListener("click", () => {
-	console.log("hello");
 	navMobile.setAttribute("hidden", true);
 });

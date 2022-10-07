@@ -111,6 +111,7 @@ body
 	text-align: center;
 	font-size: 1.1rem;
 }
+
 body
 	> section.hero
 	> div.container
@@ -680,6 +681,21 @@ body > section.footer > div.container > div.footer-links > a {
 		text-align: left;
 		justify-content: flex-start;
 	}
+	/*  FIXME*/
+	body
+		> section.hero
+		> div.container
+		> div.hero-content
+		> div.hero-buttons
+		> a.blue1:hover {
+		background-color: transparent;
+		color: #072ac8;
+		border-radius: 5px;
+		box-shadow: -1px 1px 51px 0px #072ac8;
+		-webkit-box-shadow: -1px 1px 51px 0px #072ac8;
+		-moz-box-shadow: -1px 1px 51px 0px #072ac8;
+	}
+
 	body > section.hero > div.container > div.images {
 		width: 600px;
 		position: relative;

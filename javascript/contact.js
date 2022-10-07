@@ -31,3 +31,15 @@ const handleSubmit = async (e) => {
 const formTag = document.querySelector("form");
 console.log(formTag);
 formTag.addEventListener("submit", handleSubmit);
+
+const burguer = document.querySelector(".fa-solid");
+
+const navMobile = document.querySelector(".not-desktop");
+//on click,  desplegar menu
+burguer.addEventListener("click", () => {
+	navMobile.removeAttribute("hidden");
+});
+// on click ocultar menu
+navMobile.addEventListener("click", () => {
+	navMobile.setAttribute("hidden", true);
+});
